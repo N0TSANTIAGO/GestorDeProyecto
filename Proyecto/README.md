@@ -1,3 +1,12 @@
+## Prof. Jaime E Soto U
+## I. U. Pascual Bravo
+## Facultad de Ingeniería
+
+Proyecto Integrador de Aula de los cursos del Programa de Ingeniería de Software:
+- Base de Datos I
+- Desarrollo Web con nuevas tecnologías
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -35,14 +44,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com)**
+- **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
 - **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
 - **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
 - **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
 - **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
 ## Contributing
 
@@ -59,3 +73,23 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+<br>
+<br>
+
+## INSTRUCCIONES DE INSTALACIÓN, CONFIGURACIÓN Y ARRANQUE DEL PROYECTO
+Bienvenidos a una experiencia Laravel!
+-  1.- Ubicarse en una carpeta en el disco local 
+-  2.- Clonar el proyecto: git clone https://github.com/jaimesoto/clase_aut.git
+-  3.- Abrir la carpeta: "cd clase_aut" 
+-  4.- Correr "composer update" 
+-  5.- Crear archivo ".env" (lo puede copiar del example) 
+-  6.- Configurar la base de datos en el ".env" 
+-  7.- Crear la base de datos en pgAdmin4 "aut" 
+-  8.- Correr en consola "php artisan migrate"
+-  9.- Correr en consola "php artisan key:generate"
+- 10.- Desde Visual Studio Code: Abrir 2 terminales (una para Artisan y la otra para Node) 
+- 11.- Arrancar Artisan en un terminal: "php artisan serve" -> http://localhost:8000 
+- 12.- Arrancar Node en el otro terminal: "npm install" (primero) "npm run dev" (después) 
+- 13.- Ir al explorador y acceder a la URL http://localhost:8000
