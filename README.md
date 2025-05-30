@@ -9,6 +9,7 @@ En cuanto a su desarrollo tecnológico, el sistema fue construido utilizando Lar
 El sistema está pensado para ser fácilmente adaptable a diferentes instituciones y contextos educativos, permitiendo su escalabilidad y evolución futura. Además, su estructura modular favorece el mantenimiento y la incorporación de nuevas funcionalidades conforme a las necesidades de las entidades que lo adopten.
 
 INTEGRANTES
+
 ESTEFANIA MORA CALDERON
 
 DIEGO ALEJANDRO VALENCIA PALACIO
