@@ -17,5 +17,12 @@ export default {
         },
     },
 
+    
+    safelist: [
+        {
+            pattern: /bg-\[url.*\]/,
+        },
+    ],
+    
     plugins: [forms],
 };
