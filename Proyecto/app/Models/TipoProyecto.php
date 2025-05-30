@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class TipoProyecto extends Model {
     use HasFactory;
+    protected $table = 'tipos_proyecto';
 
-    protected $fillable = ['codigo', 'descripcion'];
+    protected $fillable = ['nombre'];
+
+    public function proyectos()
+    {
+        return $this->hasMany(Proyecto::class);
+    }
 }
