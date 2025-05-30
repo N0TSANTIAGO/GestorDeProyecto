@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('evaluador', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
             $table->string('nombre', 255);
             $table->string('correo', 255)->unique();
             $table->timestamps();

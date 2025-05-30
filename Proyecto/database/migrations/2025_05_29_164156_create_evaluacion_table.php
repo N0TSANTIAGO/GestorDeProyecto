@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('evaluacion', function (Blueprint $table) {
             // Esta tabla representa las plantillas o tipos de evaluación
-            $table->id();
+            $table->id('id');
             $table->string('nombre', 255)->unique();
             $table->text('descripcion')->nullable();
             $table->timestamps();

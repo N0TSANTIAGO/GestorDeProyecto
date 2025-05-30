@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('facultad', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
             $table->string('nombre', 255);
             $table->unsignedBigInteger('institucion_id');
             $table->timestamps();
             $table->foreign('institucion_id')
-                  ->references('id')->on('instituciones')
+                  ->references('id')->on('institucion')
                   ->onDelete('cascade'); // o 'restrict' si prefieres
         });
     }

@@ -12,13 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('progama', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
             $table->string('nombre', 255);
             $table->unsignedBigInteger('departamento_id');
             $table->timestamps();
 
             $table->foreign('departamento_id')
-                  ->references('id')->on('departamentos')
+                  ->references('id')->on('departamento')
                   ->onDelete('cascade');
         });
     }

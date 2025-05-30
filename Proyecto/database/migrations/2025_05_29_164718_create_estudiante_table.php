@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('estudiante', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
             $table->string('nombre', 255);
             $table->string('correo', 255)->unique();
             $table->unsignedBigInteger('institucion_id')->nullable();
@@ -22,13 +22,13 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign('institucion_id')
-                  ->references('id')->on('instituciones')
+                  ->references('id')->on('institucion')
                   ->onDelete('set null');
             $table->foreign('facultad_id')
-                  ->references('id')->on('facultades')
+                  ->references('id')->on('facultad')
                   ->onDelete('set null');
             $table->foreign('departamento_id')
-                  ->references('id')->on('departamentos')
+                  ->references('id')->on('departamento')
                   ->onDelete('set null');
             // Si un estudiante se matricula en UNA asignatura directamente (1:N):
             // $table->foreign('asignatura_id')
