@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('asignatura', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 255);
+            $table->unsignedBigInteger('programa_id');
             $table->timestamps();
+
+            $table->foreign('programa_id')
+                  ->references('id')->on('programas')
+                  ->onDelete('cascade');
         });
     }
 

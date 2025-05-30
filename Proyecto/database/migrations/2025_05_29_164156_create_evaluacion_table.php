@@ -12,7 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('evaluacion', function (Blueprint $table) {
+            // Esta tabla representa las plantillas o tipos de evaluación
             $table->id();
+            $table->string('nombre', 255)->unique();
+            $table->text('descripcion')->nullable();
             $table->timestamps();
         });
     }
