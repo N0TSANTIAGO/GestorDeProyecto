@@ -23,19 +23,23 @@
       <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6">
         <h3 class="text-lg font-bold mb-4 text-white">Menú de opciones</h3>
         <ul class="list-disc ml-5 space-y-2 marker:text-white">
-          <li>
-            <a href="{{ route('tipo-proyectos.index') }}" class="text-yellow-400 hover:underline">
-              Tipos de Proyecto
-            </a>
-          </li>
-          <li><a class="text-yellow-400 hover:underline">Instituciones</a></li>
-          <li><a class="text-yellow-400 hover:underline">Facultades</a></li>
-          <li><a class="text-yellow-400 hover:underline">Departamentos</a></li>
-          <li><a class="text-yellow-400 hover:underline">Programas</a></li>
-          <li><a class="text-yellow-400 hover:underline">Asignaturas</a></li>
-          <li><a class="text-yellow-400 hover:underline">Docentes</a></li>
-          <li><a class="text-yellow-400 hover:underline">Estudiantes</a></li>
-          <li><a class="text-yellow-400 hover:underline">Evaluadores</a></li>
+                    <li>
+                        <a href="{{ route('proyectos.crear_proyecto') }}" class="text-yellow-400 hover:underline">
+                        crear proyecto
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="{{ route('proyectos.lista_proyecto') }}" class="text-yellow-400 hover:underline">
+                        lista de proyecto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('proyectos.revision_proyecto') }}" class="text-yellow-400 hover:underline">
+                        evalucacion de proyecto
+                        </a>
+                    </li>
         </ul>
       </div>
     </div>
