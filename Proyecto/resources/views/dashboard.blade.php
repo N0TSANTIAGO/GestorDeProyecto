@@ -1,21 +1,46 @@
-@extends('layouts.app')
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
 
-@section('title', 'Crear Proyecto')
-
-@section('content')
-    <h1 class="text-xl font-bold mb-4">Crear Proyecto</h1>
-
-    <form action="{{ route('proyectos.store') }}" method="POST" class="space-y-4">
-        @csrf
-        <div>
-            <label for="titulo" class="block font-medium">Título</label>
-            <input type="text" name="titulo" id="titulo" class="w-full p-2 border rounded" required>
+    <!-- <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
+                    {{ __("You're logged in!") }}
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="descripcion" class="block font-medium">Descripción</label>
-            <textarea name="descripcion" id="descripcion" class="w-full p-2 border rounded" required></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Guardar</button>
-    </form>
-@endsection
+    </div> -->
 
+    <!-- Agregado para un Menú -->
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white  dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6"> 
+                <h3 class="text-lg font-bold mb-4 text-white">Menú de opciones</h3>
+                    <ul class="list-disc ml-5 space-y-2 marker:text-white">
+                
+                    <li>
+                        <a href="{{ route('tipo-proyectos.index') }}" class="text-yellow-400 hover:underline">
+                        Tipos de Proyecto
+                        </a>
+                    </li>
+                    
+                    <li><a class="text-yellow-400 hover:underline">Instituciones</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Facultades</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Departamentos</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Programas</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Asignaturas</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Docentes</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Estudiantes</a></li>
+                    <li><a class="text-yellow-400 hover:underline">Evaluadores</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+
+</x-app-layout>

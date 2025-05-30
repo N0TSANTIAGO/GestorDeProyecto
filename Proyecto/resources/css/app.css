@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilos personalizados para tus imágenes */
+.img-responsive {
+  @apply w-full max-w-[300px] h-[180px] object-contain rounded-lg border border-gray-300 bg-gray-100;
+}
+
+/* Opcional: estilos para móviles */
+@media (max-width: 640px) {
+  .img-responsive {
+    @apply max-w-[100px] h-[100px];
+  }
+}
+
+/* Contenedor flex para las imágenes */
+.imagenes-contenedor {
+  @apply max-w-[960px] mx-auto flex gap-4 justify-center flex-nowrap;
+}
+
+.decoracion-personalizable {
+  border: 4px solid #FFD700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  transform-origin: center center;
+  /* Añadido para que el escalado no empuje nada */
+  position: relative;
+  z-index: 0;
+}
+
+.decoracion-personalizable:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10; /* Para que quede arriba de las otras imágenes */
+}
+
+
