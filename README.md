@@ -1,5 +1,8 @@
 Grupo B
 
+<img src="blob:https://web.whatsapp.com/140a6535-ae77-4426-9a7c-3a01608189c1"/>![image](https://github.com/user-attachments/assets/305b2f6d-1f61-41b1-8b9e-626c942459ef)
+
+
 El presente proyecto tiene como objetivo el desarrollo de un sistema de información para la gestión de proyectos de aula en instituciones educativas. Esta herramienta está diseñada para facilitar y centralizar el registro, seguimiento, evaluación y asignación de proyectos académicos, involucrando a los distintos actores del proceso educativo: estudiantes, docentes, evaluadores y coordinadores institucionales.
 
 La plataforma permite estructurar las relaciones entre instituciones, facultades, departamentos, programas y asignaturas, garantizando una visión organizada y jerarquizada de la información. Además, incorpora funcionalidades que permiten asignar proyectos a grupos de estudiantes, asociarlos a asignaturas específicas, vincular docentes responsables y registrar las evaluaciones realizadas por evaluadores externos o internos.
