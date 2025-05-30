@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('progama', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 255);
+            $table->unsignedBigInteger('departamento_id');
             $table->timestamps();
+
+            $table->foreign('departamento_id')
+                  ->references('id')->on('departamentos')
+                  ->onDelete('cascade');
         });
     }
 

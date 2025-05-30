@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('facultad', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 255);
+            $table->unsignedBigInteger('institucion_id');
             $table->timestamps();
+            $table->foreign('institucion_id')
+                  ->references('id')->on('instituciones')
+                  ->onDelete('cascade'); // o 'restrict' si prefieres
         });
     }
 
