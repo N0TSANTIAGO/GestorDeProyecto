@@ -22,22 +22,41 @@
                 <h3 class="text-lg font-bold mb-4 text-white">Menú de opciones</h3>
                     <ul class="list-disc ml-5 space-y-2 marker:text-white">
                 
-                    <li>
-                        <a class="text-yellow-400 hover:underline">
-                        crear proyecto
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a  class="text-yellow-400 hover:underline">
-                        lista de proyecto
+                     <li>
+                        <a href="{{ route('tipo-proyecto.index') }}" class="text-blue-600 hover:underline">
+                        Tipos de Proyecto
                         </a>
                     </li>
 
                     <li>
-                        <a  class="text-yellow-400 hover:underline">
-                        evalucacion de proyecto
-                        </a>
+                        <a class="text-blue-600 hover:underline">Instituciones</a>
+                    </li>
+
+                    <li>
+                        <a class="text-blue-600 hover:underline">Facultades</a>
+                    </li>
+                    <li>
+                        <a class="text-blue-600 hover:underline">Departamentos</a>
+                    </li>
+
+                    <li>
+                        <a class="text-blue-600 hover:underline">Programas</a>
+                    </li>
+
+                    <li>
+                        <a class="text-blue-600 hover:underline">Asignaturas</a>
+                    </li>
+
+                    <li>
+                        <a class="text-blue-600 hover:underline">Docentes</a>
+                    </li>
+
+                    <li>
+                        <a class="text-blue-600 hover:underline">Estudiantes</a>
+                    </li>
+
+                    <li>
+                        <a class="text-blue-600 hover:underline">Evaluadores</a>
                     </li>
                     
                 </ul>
