@@ -6,7 +6,6 @@
             class="inline-block bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800 mb-4">
             ← Volver al Menú Principal
         </a>
-
     </x-slot>
 
     <div class="py-12 px-6">
@@ -15,17 +14,9 @@
             @csrf
 
             <div class="mb-4">
-                <label class="block font-bold">Código</label>
-                <input type="text" name="codigo" class="w-full border p-2 rounded" required>
-                @error('codigo')
-                    <span class="text-red-500 text-sm">{{ $message }}</span>
-                @enderror
-            </div>
-
-            <div class="mb-4">
-                <label class="block font-bold">Descripción</label>
-                <input type="text" name="descripcion" class="w-full border p-2 rounded" required>
-                @error('descripcion')
+                <label class="block font-bold mb-1">Nombre</label>
+                <input type="text" name="nombre" class="w-full border p-2 rounded" value="{{ old('nombre') }}" required>
+                @error('nombre')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                 @enderror
             </div>

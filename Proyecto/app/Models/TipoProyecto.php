@@ -10,7 +10,8 @@ class TipoProyecto extends Model {
 
     protected $table = 'tipo_proyecto';
 
-    protected $fillable = ['codigo','tipo','descripcion'];
+    // Cambié el fillable para que solo incluya 'nombre'
+    protected $fillable = ['nombre'];
 
     public function proyectos()
     {

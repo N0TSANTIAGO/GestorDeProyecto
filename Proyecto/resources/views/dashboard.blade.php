@@ -27,13 +27,15 @@
                         Tipos de Proyecto
                         </a>
                     </li>
-
+                    
                     <li>
-                        <a class="text-blue-600 hover:underline">Instituciones</a>
+                        <a href="{{ route('institucion.index') }}" class="text-blue-600 hover:underline">
+                        Institucion
+                        </a>
                     </li>
 
                     <li>
-                        <a class="text-blue-600 hover:underline">Facultades</a>
+                        <a class="text-blue-600 hover:underline">Facultad</a>
                     </li>
                     <li>
                         <a class="text-blue-600 hover:underline">Departamentos</a>

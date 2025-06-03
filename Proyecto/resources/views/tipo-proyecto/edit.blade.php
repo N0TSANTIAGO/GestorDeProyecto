@@ -9,18 +9,9 @@
             @method('PUT')
 
             <div class="mb-4">
-                <label class="block font-bold">Código</label>
-                <input type="text" name="codigo" value="{{ old('codigo', $tipoProyecto->codigo) }}" class="w-full border p-2 rounded" required>
-                @error('codigo')
-                    <span class="text-red-500 text-sm">{{ $message }}</span>
-                @enderror
-            </div>
-
-
-            <div class="mb-4">
-                <label class="block font-bold">Descripción</label>
-                <input type="text" name="descripcion" value="{{ old('descripcion', $tipoProyecto->descripcion) }}" class="w-full border p-2 rounded" required>
-                @error('descripcion')
+                <label class="block font-bold">Nombre</label>
+                <input type="text" name="nombre" value="{{ old('nombre', $tipoProyecto->nombre) }}" class="w-full border p-2 rounded" required>
+                @error('nombre')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                 @enderror
             </div>

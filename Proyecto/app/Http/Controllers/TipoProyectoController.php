@@ -10,7 +10,7 @@ class TipoProyectoController extends Controller
     public function index()
     {
         $tipos = TipoProyecto::all();
-    return view('tipo-proyecto.index', compact('tipos'));
+        return view('tipo-proyecto.index', compact('tipos'));
     }
 
     public function create()
@@ -18,14 +18,14 @@ class TipoProyectoController extends Controller
         return view('tipo-proyecto.create');
     }
 
+    // 👇 AQUÍ VA EL MÉTODO STORE
     public function store(Request $request)
     {
         $request->validate([
-            'codigo' => 'required|unique:tipo_proyecto,codigo|max:10',
-            'descripcion' => 'required|string|max:255',
+            'nombre' => 'required|string|max:255|unique:tipo_proyecto,nombre',
         ]);
 
-        TipoProyecto::create($request->only('codigo', 'descripcion'));
+        TipoProyecto::create($request->only('nombre'));
 
         return redirect()->route('tipo-proyecto.index')->with('success', 'Tipo de proyecto creado correctamente.');
     }
@@ -38,11 +38,10 @@ class TipoProyectoController extends Controller
     public function update(Request $request, TipoProyecto $tipoProyecto)
     {
         $request->validate([
-            'codigo' => 'required|max:10|unique:tipo_proyecto,codigo,' . $tipoProyecto->id,
-            'descripcion' => 'required|string|max:255',
+            'nombre' => 'required|string|max:255|unique:tipo_proyecto,nombre,' . $tipoProyecto->id,
         ]);
 
-        $tipoProyecto->update($request->only('codigo', 'descripcion'));
+        $tipoProyecto->update($request->only('nombre'));
 
         return redirect()->route('tipo-proyecto.index')->with('success', 'Tipo de proyecto actualizado correctamente.');
     }
