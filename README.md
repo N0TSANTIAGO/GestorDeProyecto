@@ -13,7 +13,7 @@ El sistema está pensado para ser fácilmente adaptable a diferentes institucion
 
 INTEGRANTES
 
-<img src="blob:chrome-untrusted://media-app/96cfb0e0-db77-4492-8d57-795033e7cdf4" alt="Imagengrupal.jpg"/>![image](https://github.com/user-attachments/assets/23d80cb8-2c52-43ad-9429-09bfe1eeeb6d)
+<img src="blob:chrome-untrusted://media-app/96cfb0e0-db77-4492-8d57-795033e7cdf4" alt=""/>![image](https://github.com/user-attachments/assets/23d80cb8-2c52-43ad-9429-09bfe1eeeb6d)
 
 
 ESTEFANIA MORA CALDERON
@@ -23,3 +23,5 @@ DIEGO ALEJANDRO VALENCIA PALACIO
 JUAN DAVID ARBOLEDA ARANGO
 
 SANTIAGO ECHAVARRIA PATIÑO
+
+Video explicativo https://youtu.be/MAFhWX4BMis
